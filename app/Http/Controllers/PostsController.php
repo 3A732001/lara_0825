@@ -13,22 +13,22 @@ class PostsController extends Controller
      */
     public function index()
     {
-        return view('index');
+        return view('index.index');
     }
 
         public function show()
     {
-        return view('post');
+        return view('post.post');
     }
 
         public function about()
     {
-        return view('about');
+        return view('about.about');
     }
 
         public function contact()
     {
-        return view('contact');
+        return view('contact.contact');
     }
 
 
@@ -60,6 +60,13 @@ class PostsController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+    /*
+     public function show($id)
+    {
+        //
+    }
+     */
+    
     /**
      * Show the form for editing the specified resource.
      *
