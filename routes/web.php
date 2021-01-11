@@ -19,8 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $comment = new Comment();
-    $comment->content = '123';
-    $comment->post_id = '5';
+    $comment->content = '456';
+    $comment->post_id = '6';
     $comment->save();
 
 });
