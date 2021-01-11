@@ -17,8 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $post=Post::find(1);
-    $post->delete();
+    Post::destroy(2);
 
 });
 
