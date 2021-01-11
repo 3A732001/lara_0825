@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $post=Post::all();
+    $post=Post::find(1);
     dd($post);
 
 });
