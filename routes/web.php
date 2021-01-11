@@ -17,8 +17,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $post=Post::where('id','<',10)->orderBy('id','DESC')->get();
-    dd($post);
+    $post=Post::find(1);
+    $post->update([
+        'title'=>'updated title',
+        'content' =>'update content',
+    ]);
 
 });
 
