@@ -18,10 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $post=Post::find(1);
-    $post->update([
-        'title'=>'updated title',
-        'content' =>'update content',
-    ]);
+    $post->title='save title';
+    $post->content='save content';
+    $post->save();
 
 });
 
