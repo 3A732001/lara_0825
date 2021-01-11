@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PostsController;
+use App\Models\Comment;
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 
@@ -17,8 +18,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $lastPost=Post::orderBy('id','DESC')->first();
-    dd($lastPost);
+    $comment = new Comment();
+    $comment->content = '123';
+    $comment->post_id = '5';
+    $comment->save();
 
 });
 
