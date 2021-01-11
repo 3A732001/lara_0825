@@ -18,9 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $post=Post::find(1);
-    $post->title='save title';
-    $post->content='save content';
-    $post->save();
+    $post->delete();
 
 });
 
