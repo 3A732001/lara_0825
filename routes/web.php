@@ -18,10 +18,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $comment = new Comment();
-    $comment->content = '789';
-    $comment->post_id = '7';
-    $comment->save();
+    $post=Post::find(6);
+    foreach($post->comments as $comment){
+        echo $comment->content.'<br>';
+    }
 
 });
 
