@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    Post::destroy(2);
+    Post::destroy(3, 5, 7);
 
 });
 
